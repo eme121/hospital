@@ -1,0 +1,9 @@
+2026-03-19 09:21:50 | LEAD CAPTURE: Donor fff (okonkwoemekaisaac@gmail.com) proceeded with card for ₦5000 in category: Patient Care
+2026-03-19 09:22:47 | LEAD CAPTURE: Donor fff (okonkwoemekaisaac@gmail.com) proceeded with transfer for ₦5000 in category: Patient Care
+2026-03-19 09:22:49 | MANUAL TRANSFER: fff (₦5000) submitted ref: 11111111111111111111111111111. Verification Pending.
+2026-03-20 15:09:28 | LEAD CAPTURE: Donor dhvv (newdoctor2@gmail.com) proceeded with card for ₦5000 in category: Patient Care
+2026-03-20 15:57:54 | LEAD CAPTURE: Donor ddd (okonkwoemekaisaac@gmail.com) proceeded with card for ₦5000 in category: Hospital Equipment
+2026-03-23 15:20:42 | LEAD CAPTURE: Donor thonny (okonkwoemekaisaac@gmail.com) proceeded with card for ₦15000 in category: Patient Care
+2026-03-23 15:23:02 | PAYSTACK SUCCESS: ₦15000 verified with ref HH-953108518
+2026-03-31 09:57:48 | LEAD CAPTURE: Donor new (okonkwoemekaisaac@gmail.com) proceeded with card for ₦5000 in category: Hospital Equipment
+2026-03-31 10:04:47 | LEAD CAPTURE: Donor new (okonkwoemekaisaac@gmail.com) proceeded with card for ₦5000 in category: Patient Care

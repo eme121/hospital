@@ -1,0 +1,72 @@
+/* Custom Styles for Donate Page */
+
+:root {
+    --primary-blue: #2563eb;
+    --primary-light: #eff6ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Glassmorphism utility */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom Checkbox/Radio styling for Peer classes */
+input[type="radio"]:checked + div .w-5.h-5.rounded-full {
+    border-color: var(--primary-blue);
+    background-color: var(--primary-blue);
+}
+
+input[type="radio"]:checked + div .w-2.h-2.bg-white {
+    opacity: 1;
+}
+
+/* Amount card animations */
+.amount-card, .category-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.amount-card:hover, .category-card:hover {
+    transform: translateY(-6px);
+    border-color: #bfdbfe;
+    background-color: #f8fafc;
+}
+
+.category-card.active {
+    border-color: #2563eb;
+    background-color: #eff6ff;
+    box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.15);
+}
+
+.category-card.active h4 {
+    color: #2563eb;
+}
+
+.category-card.active .w-12 {
+    background-color: #2563eb !important;
+    color: white !important;
+}
+
+/* Frequency toggle animation */
+#btn-onetime, #btn-monthly {
+    transition: all 0.4s ease;
+}
+
+/* Modal animation classes */
+.modal-show #modal-content {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .hero-gradient {
+        background: radial-gradient(circle at top, #e0f2fe 0%, #ffffff 70%);
+    }
+}

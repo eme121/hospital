@@ -1,0 +1,28 @@
+# Security
+.env
+.git/
+
+# Large Media & Folders
+Git/
+pix/
+wheel/
+videos/
+imgoutr/
+pixnow/
+pix_converted/
+assets/uploads/
+assets/telemedicine_uploads/
+
+# File Types
+*.tar
+*.zip
+*.rar
+*.mp4
+*.MOV
+*.CR2
+*.webm
+*.mp3
+*.docx
+
+# Logs
+*.log

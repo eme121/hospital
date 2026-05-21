@@ -1,0 +1,340 @@
+/* Bespoke Hexagonal Glassmorphism Chatbot Icon - Premium V2 */
+#hope-chat-icon {
+    position: fixed;
+    bottom: 110px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 10001;
+    perspective: 1200px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.icon-inner {
+    width: 100%;
+    height: 100%;
+    /* Layered Glassmorphism */
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    
+    /* Precision Hexagonal Shape */
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transform-style: preserve-3d;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+    animation: hope-3d-float 5s infinite ease-in-out;
+}
+
+/* Internal Refraction / Edge Highlight */
+.icon-inner::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, transparent 40%, rgba(255,255,255,0.1) 100%);
+    z-index: 1;
+}
+
+/* Dynamic Glint / Scanning Shine */
+.icon-inner::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0) 45%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0) 55%,
+        transparent 100%
+    );
+    transform: rotate(35deg);
+    animation: hope-shine 6s infinite ease-in-out;
+    z-index: 3;
+}
+
+/* High-End Aura Glow */
+#hope-chat-icon::before {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    background: linear-gradient(45deg, #3b82f6, #60a5fa, #2563eb);
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    filter: blur(20px);
+    opacity: 0.35;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+@keyframes hope-shine {
+    0% { left: -150%; top: -100%; opacity: 0; }
+    20% { opacity: 0.6; }
+    40% { left: 150%; top: 100%; opacity: 0; }
+    100% { left: 150%; top: 100%; opacity: 0; }
+}
+
+@keyframes hope-3d-float {
+    0%, 100% { transform: translateY(0) rotateX(12deg) rotateY(-12deg); }
+    50% { transform: translateY(-18px) rotateX(-6deg) rotateY(18deg); }
+}
+
+#hope-chat-icon:hover {
+    transform: scale(1.15) translateY(-5px);
+}
+
+#hope-chat-icon:hover::before {
+    opacity: 0.7;
+    filter: blur(25px);
+}
+
+#hope-chat-icon:hover .icon-inner {
+    background: rgba(255, 255, 255, 0.95);
+    transform: rotateX(0deg) rotateY(0deg) translateZ(20px);
+    box-shadow: 0 15px 45px rgba(37, 99, 235, 0.2);
+}
+
+#hope-chat-icon img {
+    width: 46px;
+    height: 46px;
+    z-index: 5;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#hope-chat-icon:hover img {
+    transform: scale(1.1) translateZ(30px) rotate(5deg);
+}
+
+/* Premium Status Badge */
+.status-dot-small {
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+    margin-left: 10px;
+    position: relative;
+    box-shadow: 0 0 10px #10b981;
+}
+
+.status-dot-small::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    background: #10b981;
+    opacity: 0.4;
+    animation: status-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes status-ping {
+    75%, 100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* Floating Label Enhancement */
+#hope-chat-label {
+    position: fixed;
+    bottom: 128px;
+    right: 130px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    padding: 12px 28px;
+    border-radius: 100px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0.9;
+}
+
+#hope-chat-icon:hover + #hope-chat-label {
+    transform: translateX(-15px);
+    opacity: 1;
+    background: white;
+}
+
+#hope-chat-label span {
+    font-size: 13px;
+    font-weight: 900;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+/* Chat window and rest of styles... */
+#hope-chat-window {
+    position: fixed;
+    bottom: 195px;
+    right: 30px;
+    width: 380px;
+    height: 600px;
+    max-height: calc(100vh - 210px);
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #f1f5f9;
+}
+
+#hope-chat-window.active {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.chat-header {
+    background: #2563eb;
+    padding: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-header .info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chat-header .avatar {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-messages {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f8fafc;
+}
+
+.message {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.message.bot { background: white; color: #1e293b; align-self: flex-start; border-bottom-left-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+.message.user { background: #2563eb; color: white; align-self: flex-end; border-bottom-right-radius: 4px; }
+
+.typing {
+    padding: 10px 24px;
+    font-size: 12px;
+    color: #64748b;
+    font-style: italic;
+    display: none;
+}
+
+.quick-btns {
+    padding: 15px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: white;
+    border-top: 1px solid #f1f5f9;
+}
+
+.quick-btn {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quick-btn:hover {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.chat-input-area {
+    padding: 20px 24px;
+    display: flex;
+    gap: 10px;
+    background: white;
+    border-top: 1px solid #f1f5f9;
+}
+
+.chat-input-area input {
+    flex: 1;
+    border: 1px solid #e2e8f0;
+    padding: 12px 15px;
+    border-radius: 12px;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input-area button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#whatsapp-float {
+    right: 30px !important;
+    left: auto !important;
+    bottom: 30px !important;
+    z-index: 10000 !important;
+}
+
+@media (max-width: 480px) {
+    #hope-chat-window {
+        width: 100% !important;
+        height: 100vh !important;
+        height: 100dvh !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+        border-radius: 0 !important;
+    }
+    #hope-chat-icon { bottom: 100px !important; right: 20px !important; width: 60px !important; height: 60px !important; }
+    #hope-chat-label { display: none !important; }
+}

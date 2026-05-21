@@ -1,0 +1,132 @@
+
+/* Modern Sidebar Layout CSS */
+:root {
+    --sidebar-width: 280px;
+    --sidebar-collapsed-width: 80px;
+    --topbar-height: 70px;
+    --primary-color: #2563eb;
+    --bg-light: #f8fafc;
+    --text-muted: #64748b;
+    --text-dark: #0f172a;
+}
+
+body {
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: var(--sidebar-width);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#sidebar.collapsed {
+    width: var(--sidebar-collapsed-width);
+}
+
+#sidebar.collapsed .logo-text,
+#sidebar.collapsed .submenu-trigger span,
+#sidebar.collapsed .submenu-trigger i.fa-chevron-right,
+#sidebar.collapsed nav span {
+    display: none;
+}
+
+#sidebar.collapsed .submenu {
+    display: none !important;
+}
+
+#sidebar.collapsed .flex-1.space-y-1 a,
+#sidebar.collapsed .flex-1.space-y-1 button {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#sidebar.collapsed .flex-1.space-y-1 i {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+/* Main Content Wrapper */
+#main-wrapper {
+    margin-left: var(--sidebar-width);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 100vh;
+}
+
+#main-wrapper.expanded {
+    margin-left: var(--sidebar-collapsed-width);
+}
+
+/* Topbar Styling */
+#topbar {
+    height: var(--topbar-height);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e2e8f0;
+    z-index: 40;
+}
+
+/* Submenu Styling */
+.submenu-trigger i.fa-chevron-right {
+    transition: transform 0.3s;
+}
+
+.submenu-trigger.active i.fa-chevron-right {
+    transform: rotate(90deg);
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.submenu.show {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    #sidebar {
+        transform: translateX(-100%);
+    }
+    #sidebar.mobile-show {
+        transform: translateX(0);
+        width: var(--sidebar-width) !important;
+    }
+    #main-wrapper {
+        margin-left: 0 !important;
+    }
+    #sidebar.mobile-show .logo-text,
+    #sidebar.mobile-show span {
+        display: block !important;
+    }
+}
+
+/* Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 10px;
+}
+
+/* Active Link Highlight */
+.nav-link.active {
+    background: rgba(37, 99, 235, 0.1);
+    color: #3b82f6;
+    border-left: 4px solid #3b82f6;
+}
+
+.sidebar-dark .nav-link.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left: 4px solid #2563eb;
+}

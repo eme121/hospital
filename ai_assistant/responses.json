@@ -1,0 +1,61 @@
+{
+    "hospital_name": "Hope Haven Hospital",
+    "formerly": "CMC Hospital",
+    "welcome": "Hello, I am HOPE, the Hope Haven Hospital virtual assistant. How can I help you today?",
+    "emergency": {
+        "message": "🚨 EMERGENCY DETECTED: For immediate assistance, please call our 24/7 Emergency Line: +234 800 123 4567. We are located at Emmause Road, Plateau, Nigeria. Our rapid response team and ambulances are ready.",
+        "phone": "+234 800 123 4567",
+        "location": "Emmause Road, Plateau, Nigeria"
+    },
+    "services": {
+        "diagnostics": "Our laboratory is equipped with high-precision automated analyzers for accurate clinical chemistry, hematology, and immunology. We offer full body checkups and molecular biology.",
+        "emergency": "Our 24/7 Trauma and Emergency center is designed for rapid response with a dedicated fleet of ambulances and an Intensive Care Unit (ICU).",
+        "pharmacy": "A fully stocked in-house pharmacy providing authentic medications with online order and home delivery options.",
+        "cardiology": "Expert cardiac care focused on prevention, diagnosis, and advanced heart treatment.",
+        "renal": "Comprehensive kidney health management including state-of-the-art dialysis services.",
+        "orthopedic": "Advanced surgical and non-surgical solutions for all bone and joint related conditions.",
+        "endocrinology": "Specialized hormonal health care focusing on diabetes management and endocrine disorders."
+    },
+    "contact": {
+        "phone": "+234 123 456 7890",
+        "email": "info@hopehaven.ng",
+        "location": "Emmause Road, Plateau, Nigeria",
+        "hours": "Always Open: Mon - Sun (24 Hours) Including Holidays."
+    },
+    "doctors": "We have a team of highly specialized medical experts across Cardiovascular, Renal, Orthopedic, and Endocrinology departments. You can book a consultation to meet them.",
+    "links": {
+        "services": "services.php",
+        "about": "about.php",
+        "contact": "contact.php",
+        "calculator": "calculator.php",
+        "appointment": "appointment.php",
+        "telemedicine": "telemedicine.php",
+        "impact": "impact.php"
+    },
+    "keywords": {
+        "hello": "Hello! I am HOPE. How can I assist you with your health needs today?",
+        "hi": "Hi there! I'm HOPE. Looking for a doctor, a service, or have an emergency?",
+        "telemedicine": "Our advanced Telemedicine Collaboration platform allows specialists to discuss complex cases in real-time. Doctors can <a href='telemedicine.php' class='text-blue-600 underline font-bold'>Sign In or Register</a> here.",
+        "outreach": "We are committed to our community! Watch our latest <a href='impact.php' class='text-blue-600 underline font-bold'>Wheelchair Distribution Story</a> to see how we are changing lives.",
+        "impact": "Hope Haven Hospital has a strong mission of community impact. See our <a href='impact.php' class='text-blue-600 underline font-bold'>Impact Page</a> for our latest outreach programs.",
+        "wheelchair": "In 2026, we distributed over 100 wheelchairs to underserved communities. Watch the full story on our <a href='impact.php' class='text-blue-600 underline font-bold'>Impact Page</a>.",
+        "service": "We offer Diagnostics, Emergency Care, Pharmacy, Cardiology, Renal Care, Orthopedics, and Endocrinology. Which would you like to know more about?",
+        "doctor": "Our specialists are leaders in their fields. You can find experts in heart health, kidney care, bone health, and diabetes. Would you like to book an appointment?",
+        "appointment": "You can book an appointment by clicking the 'Book Appointment' button or visiting our Contact page.",
+        "book": "Booking is easy! Visit our Contact page or use the quick link in my menu.",
+        "hours": "We are open 24/7, every day of the year, including holidays.",
+        "time": "We never close. Our emergency and clinical services are available 24 hours a day.",
+        "location": "We are located at Emmause Road, Plateau, Nigeria. See you soon!",
+        "where": "You can find us at Emmause Road, Plateau. We are easily accessible.",
+        "contact": "You can reach us at +234 123 456 7890 or email info@hopehaven.ng. Our physical address is Emmause Road, Plateau, Nigeria.",
+        "address": "Our hospital is located at Emmause Road, Plateau, Nigeria.",
+        "calculator": "We have health tools like BMI, Pediatric Dosage, and Heart Rate calculators on our Medical Tools page.",
+        "bmi": "Need to check your BMI? Visit our Medical Tools page to use our calculator!",
+        "dosage": "We offer a Pediatric Dosage helper on our Medical Tools page. Always consult a doctor before use.",
+        "heart": "Check your target heart rate on our Medical Tools page!",
+        "maternity": "We provide premium maternity care with dedicated specialists and modern facilities.",
+        "pediatric": "Our pediatric care ensures your children get the best medical attention from birth through adolescence.",
+        "dialysis": "Our Renal center offers state-of-the-art dialysis services with expert monitoring.",
+        "diabetes": "Our Endocrinology department specializes in advanced diabetes management and hormonal health."
+    }
+}
